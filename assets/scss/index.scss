@@ -1,0 +1,215 @@
+@import "./font";
+@import "./shared";
+@import "./navbar";
+@import "./footer";
+
+body {
+    font-family: "Graphik-Regular";
+}
+
+.width-1920 {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.back-image {
+    width: 30px;
+    margin-top: 60px;
+}
+
+.contact {
+    background: #ff75a1;
+    border-radius: 10px;
+    border: 2px solid #e44275;
+    padding: 10px 0;
+    font-size: 20px;
+    &:hover, &:active, &:focus {
+        background: #ff75a1 !important;
+        border: 2px solid #e44275 !important;
+    }
+}
+
+.greeen {
+   color: #77a728; 
+   font-weight: 600;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(187, 186, 186) !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(187, 186, 186) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(187, 186, 186) !important;
+}
+
+.header {
+    @extend %max-width;
+    min-height: calc(100vh - 89px);
+    h1 {
+        font-size: 58px;
+        font-family: 'Graphik-Bold';
+        margin-top: 80px;
+    }
+    p {
+        color: #02386fc7;
+        font-size: 20px;
+        font-family: 'Graphik-Medium';
+    }
+    .input-group {
+        max-width: 500px;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        .input-group-append {
+            button {
+                border-top-right-radius: 10px !important;
+                border-bottom-right-radius: 10px !important;
+                background: #94be50;
+                font-size: 21px;
+            }
+        }
+        input {
+            height: inherit;
+            border-radius: 10px;
+            border: 2px solid #94be50;
+        }   
+    }
+}
+
+
+.principles {
+    background: #f7f9ff;
+    padding: 50px 15px;
+    .section {
+        @extend %max-width;
+        h1 {
+            font-size: 40px;
+            font-family: "Graphik-Semibold";
+            margin-bottom: 40px;
+        }
+        .card-wrapper {
+            &__header {
+                img {
+                    width: 90px;
+                }
+                h2 {
+                    font-size: 25px;
+                    font-family: 'Graphik-Medium';
+                    margin: 20px 0px;
+                }
+            }
+            &__description {
+                p{
+                    color: #02386fc7;
+                    font-size: 18px;
+                    font-family: 'Graphik-Medium';
+                }
+            }
+        }
+    }
+}
+
+
+.motto {
+    background: #00417b;
+    .section {
+        @extend %max-width;
+        padding: 50px 0;
+        h1, p {
+            color: white;
+        }
+        h1 {
+            font-family: "Graphik-Semibold";
+            font-size: 50px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 25px;
+            padding: 0px 50px;
+            font-family: 'Graphik-Regular';
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.search {
+    @extend %max-width;
+    h1 {
+        font-family: "Graphik-Semibold";
+    }
+    h3 {
+        font-size: 24px;
+    }
+    &-results {
+        &:hover {
+            text-decoration: none;
+        }
+        &__title {
+            color: #77a728;
+            font-family: "Graphik-Regular";
+            font-weight: 600;
+        }
+        &__description {
+            font-size: 19px;
+            color: rgb(58, 58, 58);
+            font-weight: 600;
+        }
+    }
+    
+    .filter {
+        width: 100%;
+        height: 300px;
+        background-color: #f0f5fb;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+
+
+.reference {
+    background: #f7f9ff;
+    padding: 50px 15px;
+    .section {
+        @extend %max-width;
+        h4 {
+            font-weight: 600;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        p {
+            a {
+                text-decoration: underline;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+.detail {
+    @extend %max-width;
+    p {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .filter {
+        width: 100%;
+        max-width: 300px;
+        background: #f0f5f6;
+        border-radius: 10px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+    }
+}

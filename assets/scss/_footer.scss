@@ -1,0 +1,33 @@
+.footer-bg {
+    background-image: url("~assets/img/data.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    background-size: 600px 600px;
+    .footer {
+        height: 600px;
+        @extend %max-width;
+        padding: 90px 0px 70px;
+        h1 {
+            font-size: 35px;
+            font-family: 'Graphik-Semibold';
+        }
+        P {
+            font-size: 25px;
+            font-family: 'Graphik-Regular';
+            a {
+                color: blue;
+                font-family: 'Graphik-Regular';
+                font-weight: 600s;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+    }
+}
