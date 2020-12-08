@@ -22,6 +22,8 @@
           </b-row>
         </b-container>
       </header>
+
+      
     </div>
     <div class="principles">
       <section class="section">
